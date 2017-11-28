@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Chatbots with Watson Conversation</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+		<link rel="stylesheet" href="css/presentation.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal" style="background-color: #FBF8E8">
+			<div style="position: absolute; top: 40px; right: 40px;"><h5>@markwatsonatx</h5></div>
+			<div class="slides">
+				<section>
+					<h2>Prerequisites</h2>
+					<p>Bluemix Account</p>
+					<p>IoT Platform Starter</p>
+					<p>Watson Visual Recognition</p>
+					<p>Watson Conversation</p>
+				</section>
+				<section>
+						<h2>Course Material</h2>
+						<span style="font-weight: bold; font-size: 48pt">github.com/<br>markwatsonatx/<br>ibm-finish-line</span>
+					</section>
+					<section>
+						<h2>Classifying Images w/ Watson Visual Recognition</h2>
+					</section>
+					<section>
+							<h2>Chatbots w/ Watson Conversation</h2>
+						</section>
+				<section>
+					<h2>Chatbot Architecture</h2>
+					<img style="background-color: white" src="img/basic_bot_arch_3.png">
+				</section>
+				<section>
+					<h2>What are we building?</h2>
+					<p><img src="img/chat_sample.png"></p>
+				</section>
+				<section>
+					<h2>Health Bot Architecture</h2>
+					<p><img style="background-color: white" src="img/arch_full.png"></p>
+				</section>
+				<section>
+					<h2>Watson Conversation</h2>
+					<p>Watson Conversation combines a number of cognitive techniques to help you build and train a bot - defining intents and entities and crafting dialog to simulate conversation.</p>
+				</section>
+				<section>
+					<h2>Watson Conversation Concepts</h2>
+					<p>Intents</p>
+					<p>Entities</p>
+					<p>Dialog</p>
+					<p>Context</p>
+				</section>
+				<section>
+					<h2>Intents</h2>
+					<img style="background-color: white" src="img/watson_convo_intent.png">
+				</section>
+				<section>
+					<h2>Entities</h2>
+					<img style="background-color: white" src="img/watson_convo_entity1.png">
+				</section>
+				<section>
+					<h2>System Entities</h2>
+					<img style="background-color: white" src="img/watson_convo_entity2.png">
+				</section>
+				<section>
+					<h2>Dialogs</h2>
+					<img style="background-color: white" src="img/watson_convo_dialog.png">
+				</section>
+				<section>
+					<h2>Context</h2>
+					<p>Passed between Watson Conversation and application</p>
+					<p>Keeps track of current dialog in the conversation</p>
+				</section>
+				<section>
+					<h2>Context</h2>
+					<img style="background-color: white" src="img/watson_convo_context.png">
+				</section>
+				<section>
+					<h2>Let's Build a Conversation</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
